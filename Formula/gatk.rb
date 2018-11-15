@@ -4,8 +4,9 @@ class Gatk < Formula
   url "https://github.com/broadinstitute/gatk/releases/download/4.0.11.0/gatk-4.0.11.0.zip"
   sha256 "5ee23159be7c65051335ac155444c6a49c4d8e3515d4227646c0686819934536"
 
-  depends_on :java => "1.8"
   bottle :unneeded
+
+  depends_on :java => "1.8"
 
   resource "count_reads.bam" do
     url "https://github.com/broadinstitute/gatk/blob/626c88732c02b0fd5f395db20c91bf2784ec54b9/src/test/resources/org/broadinstitute/hellbender/tools/count_reads.bam?raw=true"

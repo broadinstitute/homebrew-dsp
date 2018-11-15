@@ -7,15 +7,14 @@ class Cromshell < Formula
 
   bottle :unneeded
 
-  depends_on "curl"
-  depends_on "cromwell" => [:optional]
   depends_on "jq"
+  depends_on "cromwell" => [:optional]
 
   def install
     bin.install "cromshell"
   end
 
   test do
-    system "cromshell", "--help"
+    system "#{bin}/cromshell", "--help"
   end
 end
