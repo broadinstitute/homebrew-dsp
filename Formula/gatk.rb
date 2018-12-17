@@ -1,8 +1,8 @@
 class Gatk < Formula
   desc "Official code repository for GATK versions 4 and up"
   homepage "https://software.broadinstitute.org/gatk"
-  url "https://github.com/broadinstitute/gatk/releases/download/4.0.11.0/gatk-4.0.11.0.zip"
-  sha256 "5ee23159be7c65051335ac155444c6a49c4d8e3515d4227646c0686819934536"
+  url "https://github.com/broadinstitute/gatk/releases/download/4.0.12.0/gatk-4.0.12.0.zip"
+  sha256 "733134303f4961dec589247ff006612b7a94171fab8913c5d44c836aa086865f"
 
   bottle :unneeded
 
@@ -15,10 +15,12 @@ class Gatk < Formula
 
   def install
     prefix.install "gatk"
+    prefix.install "scripts/dataproc-cluster-ui"
     prefix.install "gatk-package-#{version}-spark.jar"
     prefix.install "gatk-package-#{version}-local.jar"
     bash_completion.install "gatk-completion.sh"
     bin.install_symlink "#{prefix}/gatk"
+    bin.install_symlink "#{prefix}/dataproc-cluster-ui"
   end
 
   def caveats; <<~EOS
@@ -27,7 +29,7 @@ class Gatk < Formula
 
     See the GATK readme for detailed installation instructions.
        https://github.com/broadinstitute/gatk
-    
+
     We recommend running the tools with complex python dependencies by using our docker instead of attempting to install them locally.
     Gatk dockers are availabe on docker hub:
        https://hub.docker.com/r/broadinstitute/gatk/tags/
