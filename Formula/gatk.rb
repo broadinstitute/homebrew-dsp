@@ -25,7 +25,7 @@ class Gatk < Formula
 
   def caveats; <<~EOS
     This brew installation does not include the necessary python dependencies to run certain gatk tools.
-    Similarly, it does not install the necessary version of R and it's packages for certain plotting functions to work.
+    Similarly, it does not install the necessary version of R and its packages for certain plotting functions to work.
 
     See the GATK readme for detailed installation instructions.
        https://github.com/broadinstitute/gatk
