@@ -1,8 +1,8 @@
 class Gatk < Formula
   desc "Official code repository for GATK versions 4 and up"
   homepage "https://software.broadinstitute.org/gatk"
-  url "https://github.com/broadinstitute/gatk/releases/download/4.0.12.0/gatk-4.0.12.0.zip"
-  sha256 "733134303f4961dec589247ff006612b7a94171fab8913c5d44c836aa086865f"
+  url "https://github.com/broadinstitute/gatk/releases/download/4.1.0.0/gatk-4.1.0.0.zip"
+  sha256 "148aa061328d922a570d0120d88f27e61e5da877f542206f4d77f2d788b7d21d"
 
   bottle :unneeded
 
