@@ -1,8 +1,8 @@
 class Cromshell < Formula
   desc "Shell commands to interact with a Cromwell server"
   homepage "https://github.com/broadinstitute/cromshell"
-  url "https://github.com/broadinstitute/cromshell/archive/0.3.10.tar.gz"
-  sha256 "1e3841ccc86c44aa3bc16f500d41436f8914a894c0891488275ac2fb1e69d0fc"
+  url "https://github.com/broadinstitute/cromshell/archive/0.3.11.tar.gz"
+  sha256 "2ab4163950fec7236ac70d29e4167a589ec471f3c1b9c5c79472a1a8a13b0c96"
 
   bottle :unneeded
 
