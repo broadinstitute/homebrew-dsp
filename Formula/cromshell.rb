@@ -1,8 +1,8 @@
 class Cromshell < Formula
   desc "Shell commands to interact with a Cromwell server"
   homepage "https://github.com/broadinstitute/cromshell"
-  url "https://github.com/broadinstitute/cromshell/archive/0.3.12.tar.gz"
-  sha256 "5d487938df7500f6be516aca66e9f3c5e82ba90add32dcc8b1e29027385f33de"
+  url "https://github.com/broadinstitute/cromshell/archive/0.4.0.tar.gz"
+  sha256 "23747803dd21850bc879427f7a17fec29c42f8baf69fcbae51357b3030b2bf47"
 
   bottle :unneeded
 
@@ -11,6 +11,7 @@ class Cromshell < Formula
 
   def install
     bin.install "cromshell"
+    zsh_completion.install "completions/_cromshell" => "_cromshell"
   end
 
   test do
