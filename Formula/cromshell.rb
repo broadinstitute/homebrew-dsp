@@ -4,8 +4,6 @@ class Cromshell < Formula
   url "https://github.com/broadinstitute/cromshell/archive/0.5.2.tar.gz"
   sha256 "55c2a6181c0d292ba8598090431693933ffa36cf7730300e134857dd1ff73705"
 
-  bottle :unneeded
-
   depends_on "coreutils"
   depends_on "jq"
   depends_on "cromwell" => [:optional]
