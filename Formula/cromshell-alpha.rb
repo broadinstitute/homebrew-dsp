@@ -49,7 +49,7 @@ class CromshellAlpha < Formula
 
 # `test do` will create, run in, and delete a temporary directory.
   test do
-    system "#{bin}/cromshell-alpha", "do", "--help"
+    system "#{bin}/cromshell-alpha", "--help"
   end
 end
 
