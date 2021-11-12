@@ -1,4 +1,4 @@
-class CromshellAlpha < Formula
+class CromshellAT2Alpha1 < Formula
   include Language::Python::Virtualenv
 
   desc "Python tool to interact with a Cromwell server"
