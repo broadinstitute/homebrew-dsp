@@ -3,10 +3,10 @@ class CromshellAT2Alpha1 < Formula
 
   desc "Python tool to interact with a Cromwell server"
   homepage "https://github.com/broadinstitute/cromshell"
-  url "https://storage.googleapis.com/bshifaw-bucket/cromshell-alpha.2.0.0.tar.gz"
-  sha256 "bfbb00bdea6cfefb3061860d6c7563e609a56175d221f9876a62bafe4be67eb5"
+  url "https://github.com/broadinstitute/cromshell/archive/refs/tags/2.0.0.alpha.1.tar.gz"
+  sha256 "0ac3604ff362fdf2107f91c886887856098f1731d2d1a9e9cff59278b7b292b9"
   license "BSD-3-Clause"
-  depends_on "python@3.7"
+  depends_on "python@3.9"
 
   resource "termcolor" do
     url "https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz"
