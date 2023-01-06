@@ -223,6 +223,6 @@ class CromshellAT200Beta1 < Formula
 
   # `test do` will create, run in, and delete a temporary directory.
   test do
-    system "#{bin}/cromshell-alpha", "--help"
+    system "#{bin}/cromshell-beta", "--help"
   end
 end
