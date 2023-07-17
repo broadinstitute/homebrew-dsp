@@ -1,4 +1,4 @@
-class Cromshell@053 < Formula
+class CromshellAT053 < Formula
   desc "Shell commands to interact with a Cromwell server"
   homepage "https://github.com/broadinstitute/cromshell"
   url "https://github.com/broadinstitute/cromshell/archive/0.5.3.tar.gz"
